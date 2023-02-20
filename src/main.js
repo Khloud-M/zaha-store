@@ -3,6 +3,11 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import Vuex from 'vuex'
+// import ui component
+import BaseButton from './components/ui/BaseButton.vue'
+// import css file 
+import "@/assets/style/main.css"
+
 // Vuetify
 import 'vuetify/styles'
 import { createVuetify } from 'vuetify'
@@ -18,4 +23,6 @@ createApp(App)
 .use(router)
 .use(store)
 .use(Vuex)
-.use(vuetify).mount('#app')
+.use(vuetify)
+.component("bace-button", BaseButton)
+.mount('#app')

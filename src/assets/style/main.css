@@ -1,0 +1,35 @@
+:root{
+    --theme_main_bg_clr: #FBF9F4;
+    --theme_second_bg_clr: #F7F5EF;
+    --theme_third_bg_clr: #FBF9F4;
+    --form_content_bg_clr: #fff;
+    --footer_bg_clr: #1C1D20;
+    --small_footer_bg_clr: #e6e4e0;
+    --theme_text_clr: #001514;
+    --theme_secondary_text_clr: #FFA17A;
+    --main_theme_clr: #52004A;
+    --soft_main_theme_clr: #52004a49;
+    --secondary_theme_clr: #FFE000;
+    --dark_secondary_theme_clr: #ECB737;
+    --blurred_clr: rgba(255, 255, 255, 0.6);
+    --map_overlay_clr: rgba(225, 225, 225, 0.6);
+    --simple_shadow_clr: rgba(225, 225, 225, 0.3);
+    --mid_shadow_clr: rgba(225, 225, 225, 0.6);
+    --border_clr: #dddddd;
+    --skeleton_loader_card_clr: #ebebeb;
+    --white_clr: #fff;
+    --light_gray_clr: #B6B6B6;
+    --lighter_gray_clr:#F9FAFB;
+
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
