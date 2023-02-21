@@ -1,4 +1,5 @@
 :root{
+    --marginTopBottom: 80px;
     --theme_main_bg_clr: #FBF9F4;
     --theme_second_bg_clr: #F7F5EF;
     --theme_third_bg_clr: #FBF9F4;
@@ -32,4 +33,9 @@ a{
 }
 li {
     list-style: none;
+}
+/* heading every section */
+h3 {
+    text-align: center;
+    margin: var(--marginTopBottom) 0;
 }

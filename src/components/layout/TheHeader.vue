@@ -90,9 +90,9 @@ export default {
     justify-content: center;
     column-gap: 40px;
     li a {
-      font-size: 17px;
+      font-size: 18px;
       text-transform: uppercase;
-      font-weight: 300;
+      font-weight: 400;
       color: #b6b6b6;
       transition: all 0.5s linear;
     }

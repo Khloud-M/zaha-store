@@ -3,4 +3,7 @@ export default{
     {
         return state.chooseCategory;
     },
+    hascategery(state){
+        return state.chooseCategory && state.chooseCategory.length > 0 ;
+    },
 }

@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 // main page header
-import HomeView from "@/views/mainPage/HomeView.vue";
+import HomeView from "@/views/mainPage/TheIndex.vue";
 import categore from "@/views/mainPage/TheCategories.vue";
 import products from "@/views/mainPage/TheProducts.vue";
 import contact from "@/views/mainPage/TheContact.vue";
@@ -12,7 +12,6 @@ const router = createRouter({
   routes: [
     {
       path: "/",
-      name: "home",
       component: HomeView,
     },
     {
