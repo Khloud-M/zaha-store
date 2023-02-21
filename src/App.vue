@@ -1,12 +1,9 @@
 <template>
-  <nav>
-    <v-container>
+    <div>
       <TheHeader/>
       <router-view/>
 
-    </v-container>
-  </nav>
-  <router-view/>
+    </div>
 </template>
 <script>
 import TheHeader from './components/layout/TheHeader.vue';
