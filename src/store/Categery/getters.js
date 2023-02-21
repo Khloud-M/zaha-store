@@ -6,4 +6,8 @@ export default{
     hascategery(state){
         return state.chooseCategory && state.chooseCategory.length > 0 ;
     },
+    prodcuts(state)
+    {
+        return state.prodcuts;
+    }
 }

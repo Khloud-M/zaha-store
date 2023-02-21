@@ -21,7 +21,7 @@ button , a {
   border: 1px solid var(--main_theme_clr);
   background-color: var(--main_theme_clr); 
 
-  background-image: linear-gradient(45deg, transparent 50%, white 30%);
+  background-image: linear-gradient(135deg, transparent 50%, white 30%);
   background-size: 250%;
   transition: all 0.6s ease-in-out;
 }
@@ -33,6 +33,8 @@ button:hover,
 button:active {
   color: var(--main_theme_clr);
   background-position: 100%;
+  
+
 }
 
 </style>
