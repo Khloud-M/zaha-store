@@ -35,7 +35,7 @@ export default{
 }
 .cards {
   overflow: hidden;
-  height: 450px;
+  height: 480px;
   position: relative;
   margin-bottom: 30px;
   border-radius: 4px;
