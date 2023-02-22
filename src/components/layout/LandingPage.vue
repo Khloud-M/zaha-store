@@ -1,6 +1,6 @@
 <template>
-  <section class="landing mt-3">
-    <div class="landing-content">
+  <section class="landing">
+    <div class="landing_content">
       <h2>{{ getPath() }}</h2>
       <div class="link">
         <li><router-link to="/">home</router-link></li>
@@ -18,8 +18,9 @@
   height: 50vh;
   position: relative;
   color: var(--main_theme_clr);
+  margin-bottom: var(--marginTopBottom);
 }
-.landing-content {
+.landing_content {
   height: 200px;
   z-index: 99;
   position: absolute;
