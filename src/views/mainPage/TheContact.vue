@@ -82,8 +82,8 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-.contact{
-  margin:var(--marginTopBottom) 0 ;
+.container{
+  margin:var(--marginTopBottom) auto ;
   .contact_form{
     display: flex;
     flex-direction: row;
