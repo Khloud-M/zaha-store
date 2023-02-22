@@ -42,6 +42,7 @@ li a{
 h3 {
     text-align: center;
     margin: var(--marginTopBottom) 0;
+    color: var(--main_theme_clr);
 }
 /* scrollbar */
 ::-webkit-scrollbar {

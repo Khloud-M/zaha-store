@@ -20,7 +20,7 @@
           <li><router-link to="/products"> all products</router-link></li>
           <li><router-link to="/about"> about</router-link></li>
           <li><router-link to="/contact"> contact us</router-link></li>
-          <li><router-link to="/"> Ar</router-link></li>
+          <li> Ar</li>
         </ul>
         <!-- end list-->
         <div class="navbar_btns_wrapper">
@@ -123,12 +123,13 @@ export default {
     align-items: center;
     justify-content: center;
     column-gap: 40px;
-    li a {
+    li a  , li {
       font-size: 18px;
       text-transform: uppercase;
       font-weight: 400;
       color: #b6b6b6;
       transition: all 0.5s linear;
+      cursor: pointer;
     }
     .active,
     a:hover {
