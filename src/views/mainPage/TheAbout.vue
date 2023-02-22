@@ -1,1 +1,5 @@
-<template>about</template>
+<template>
+    <section class="about">
+        <landing-page />
+    </section>
+</template>

@@ -3,8 +3,9 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import Vuex from 'vuex'
-// import ui component
+// import ui component and public component
 import BaseButton from './components/ui/BaseButton.vue'
+import LandingPage from './components/layout/LandingPage.vue'
 // import bootstap 
 import bootstrap from 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
@@ -29,4 +30,5 @@ createApp(App)
 .use(bootstrap)
 .use(vuetify)
 .component("bace-button", BaseButton)
+.component("landing-page", LandingPage)
 .mount('#app')

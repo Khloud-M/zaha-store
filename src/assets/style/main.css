@@ -34,6 +34,10 @@ a{
 li {
     list-style: none;
 }
+li a{
+ color: #B6B6B6;
+
+}
 /* heading every section */
 h3 {
     text-align: center;

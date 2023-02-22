@@ -1,5 +1,6 @@
 <template>
     <section class="categerios">
-        categerios
+        <landing-page />
+
     </section>
 </template>
