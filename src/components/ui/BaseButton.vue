@@ -7,7 +7,7 @@
 button , a {
   text-decoration: none;
   font-size: 15px;
-  font-weight: 300;
+  font-weight: 500;
   cursor: pointer;
   position: relative;
   display: inline-block;
