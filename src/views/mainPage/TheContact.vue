@@ -109,4 +109,11 @@ export default {
     width: 100%;
   }
 /*  */
+// media 
+.content{
+  @media (max-width:768px) {
+    width: 100%;
+    
+  }
+}
 </style>

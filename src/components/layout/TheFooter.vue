@@ -86,18 +86,15 @@
                 <img
                   src="@/assets/image/apple-store.542a9c8.svg"
                   alt=""
-                  width="150"
-                  height="50"
+               
                 />
                 <img
                   src="@/assets/image/google-play.7eb8447.svg"
                   alt=""
-                  width="150"
-                  height="50"
+                 
                 />
               </div>
             </div>
-          </div>
           <div class="content-by py-4">
             Copyright © 2022 All Rights Reserved | Made With
             <img
@@ -108,6 +105,8 @@
             />
             <a href="#">Alalmiya Alhura </a>
           </div>
+        </div>
+
         </div>
         <!-- container-->
       </div>
@@ -142,6 +141,7 @@
   
     }
     .row {
+      row-gap: 30px;
       li {
         font-weight: 300;
         transition: color 0.4s linear;
@@ -218,11 +218,17 @@
         margin-top: 10px;
         display: flex;
         align-items: center;
+        @media (max-width:480px) {
+          flex-wrap:wrap;
+          row-gap: 15px;
+        }
         // justify-content: flex-start;
         column-gap: 25px;
         img {
           margin-left: 0;
           margin-right: 0;
+          height: 100%;
+          max-width: 100%;
         }
       }
     }

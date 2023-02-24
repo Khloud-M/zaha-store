@@ -20,7 +20,7 @@
           <li><router-link to="/products"> all products</router-link></li>
           <li><router-link to="/about"> about</router-link></li>
           <li><router-link to="/contact"> contact us</router-link></li>
-          <li> Ar</li>
+          <li>Ar</li>
         </ul>
         <!-- end list-->
         <div class="navbar_btns_wrapper">
@@ -72,7 +72,35 @@
                   </li>
                   <li><router-link to="/about"> about</router-link></li>
                   <li><router-link to="/contact"> contact us</router-link></li>
+                  
                 </ul>
+                <div class="phone">
+                    <form class="search-form">
+                      <button class="search_btn">
+                        <img
+                          src="@/assets/image/download.svg"
+                          alt="searchIcon"
+                          width="20"
+                          height="20"
+                        />
+                      </button>
+                      <input
+                        class="headerSearch"
+                        type="text"
+                        placeholder="search"
+                        v-model="search"
+                        @blur="rebackWidth"
+                        @click="changeWidth"
+                        :style="{ width: Width + 'px' }"
+                      />
+                    </form>
+                    <router-link to="/">
+                      <bace-button @click="toggle"> Register Now</bace-button>
+                    </router-link>
+                    <!-- <router-link v-else>
+            <bace-button @click="removeToken"> log out </bace-button> 
+           </router-link> -->
+                  </div>
               </div>
               <!-- content_dropdown-->
             </div>
@@ -89,7 +117,7 @@ export default {
   components: {},
   data() {
     return {
-      Width: "100",
+      Width: "80",
       search: "",
       mobileNav: false,
     };
@@ -99,7 +127,7 @@ export default {
       this.Width = "160";
     },
     rebackWidth() {
-      if (this.search === "") return (this.Width = "100");
+      if (this.search === "") return (this.Width = "80");
       else {
         return (this.Width = "160");
       }
@@ -117,20 +145,31 @@ export default {
   justify-content: space-between;
   .logo {
     width: 25%;
+    @media (min-width: 1025px) and (max-width: 1440px) {
+      width: 18%;
+    }
   }
   ul {
     display: flex;
     align-items: center;
     justify-content: center;
     column-gap: 40px;
-    li a  , li {
+    @media (min-width: 1025px) and (max-width: 1440px) {
+      column-gap: 30px;
+    }
+    li a,
+    li {
       font-size: 18px;
       text-transform: uppercase;
       font-weight: 400;
       color: #b6b6b6;
       transition: all 0.5s linear;
       cursor: pointer;
+      @media (min-width: 1025px) and (max-width: 1440px) {
+        font-size: 14px;
+      }
     }
+
     .active,
     a:hover {
       color: var(--main_theme_clr);
@@ -163,11 +202,12 @@ export default {
       }
     }
   }
-  .navbar_btns_wrapper {
+  .navbar_btns_wrapper , .phone {
     display: flex;
     align-items: center;
     justify-content: center;
-    column-gap: 15px;
+    flex-wrap: wrap;
+    gap: 15px;
     .search-form {
       padding: 10px;
       display: flex;
@@ -268,8 +308,11 @@ export default {
 .mobile-nav-enter-to {
   transform: translateX(0px);
 }
+// media query
+
 @media (min-width: 1025px) {
-  .mobile {
+  .mobile,
+  .phone {
     display: none !important;
   }
 }
@@ -277,7 +320,8 @@ export default {
   .large_screen {
     display: none !important;
   }
-  .search_Cart_register {
+  .search_Cart_register,
+  .navbar_btns_wrapper {
     display: none !important;
   }
 }

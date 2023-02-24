@@ -45,17 +45,17 @@
     }
   
   }
+
   .floating-input {
-    &:focus {
-      outline: none;
-      // border-color: #3a676f;
-      ~ label {
+   
+    &:focus  ~ label   , &:valid ~ label {
         font-size: 14px;
         color: var(--main_theme_clr);
         padding: 0 4px;
         background-color: white;
         top: -10px;
-      }
+      
+
     }
     
   }

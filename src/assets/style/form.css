@@ -40,10 +40,7 @@
   margin-top: 10px;
 }
 
-.floating-input:focus {
-  outline: none;
-}
-.floating-input:focus ~ label {
+.floating-input:focus ~ label, .floating-input:valid ~ label {
   font-size: 14px;
   color: var(--main_theme_clr);
   padding: 0 4px;
