@@ -58,9 +58,21 @@
 }
 .image img {
   display: block;
-  margin: auto;
-  
+  margin: auto; 
+
 }
+@media (max-width:768px) {
+    
+  .image {
+  display: none;
+}
+h4 {
+  text-align: center !important;
+}
+  
+  }
+
+
 h4 {
   font-size: 30px;
   text-align: justify;

@@ -3,7 +3,7 @@
     <h3>CATEGORIES</h3>
     <v-container>
       <ul v-if="hascategery" class="row d-flex">
-        <li class="col-lg-3" v-for="choose in Categery" :key="choose.id">
+        <li class="col-lg-3 col-md-4" v-for="choose in Categery" :key="choose.id">
           <div class="cards">
             <router-link to="/categore">
               <div class="image">
@@ -44,6 +44,7 @@ export default {
   border-radius: 4px;
   .image {
     width: 100%;
+    height: 400px;
     transition: all 0.5s linear;
     overflow: hidden;
     position: absolute;
@@ -56,7 +57,17 @@ export default {
       object-position: top;
     }
   }
+ 
 }
+@media(min-width:481px )and (max-width: 768px) {
+      .cards {
+        height: 380px;
+        .image{
+        height: 300px;
+
+        }
+    }
+  }
 .title-card {
   position: absolute;
   bottom: 0;

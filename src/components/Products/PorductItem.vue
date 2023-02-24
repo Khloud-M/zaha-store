@@ -88,7 +88,7 @@ export default{
 }
 .cards {
   height: 510px;
-  width: 300px;
+  max-width: 300px;
   overflow: hidden;
   margin-bottom: 30px;
   margin-left: 10px;
@@ -128,6 +128,7 @@ export default{
       text-align: center;
       border-radius: 20px 0 0 20px;
     }
+   
     .colors {
       flex-direction: column;
       gap: 10px;
@@ -171,4 +172,5 @@ export default{
     }
   }
 }
+
 </style>

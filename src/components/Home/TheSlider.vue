@@ -1,21 +1,22 @@
 <template>
-    <section class="slider"> 
-        <Carousel 
-        :autoplay="2000" 
-        :wrap-around="true" 
-        :items-to-show="1"
-        :transition="1500">
-          <Slide v-for="slide in slides" :key="slide">
-            <div class="carousel__item">
-              <img :src="slide.img" alt="image" />
-            </div>
-          </Slide>
+  <section class="slider">
+    <Carousel
+      :autoplay="2000"
+      :wrap-around="true"
+      :items-to-show="1"
+      :transition="1500"
+    >
+      <Slide v-for="slide in slides" :key="slide">
+        <div class="carousel__item">
+          <img :src="slide.img" alt="image" />
+        </div>
+      </Slide>
 
-          <template #addons>
-            <Navigation />
-          </template>
-        </Carousel>
-    </section>
+      <template #addons>
+        <Navigation />
+      </template>
+    </Carousel>
+  </section>
 </template>
 <script >
 import { Carousel, Navigation, Slide } from "vue3-carousel";
@@ -39,8 +40,8 @@ export default {
 };
 </script>
 <style scoped>
-.slider{
-    margin-bottom: var(--marginTopBottom) ;
+.slider {
+  margin-bottom: var(--marginTopBottom);
 }
 .carousel__item {
   height: 80vh;
@@ -48,6 +49,12 @@ export default {
   font-size: 20px;
   border-radius: 8px;
 }
+@media (max-width: 768px) {
+    .carousel__item {
+      height: 30vh !important;
+
+    }
+  }
 .carousel__item img {
   max-width: 100%;
   height: 100%;
