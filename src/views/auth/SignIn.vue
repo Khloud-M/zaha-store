@@ -27,7 +27,7 @@
             </div>
             <!-- Password-->
             <div class="forget_password">
-              <router-link to='/:auth/forgetPass'> Forget Password </router-link>
+              <router-link to='/:auth/resetPass'> Forget Password </router-link>
             </div> <!-- forget_password-->
             <bace-button class="sign" type="submit"> Sign In</bace-button>
             <div class="footer-form d-flex justify-content-center mt-3">
