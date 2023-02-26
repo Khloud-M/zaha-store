@@ -80,7 +80,8 @@ export default{
         ...mapGetters({
             products :"Categery/prodcuts",
         })  
-    }}
+    }
+    }
 </script>
 <style lang="scss" scoped>
 .row {

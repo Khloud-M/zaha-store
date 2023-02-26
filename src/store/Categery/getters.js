@@ -9,5 +9,11 @@ export default{
     prodcuts(state)
     {
         return state.prodcuts;
-    }
+    },
+    SizeFilter(state){
+     return state.SizeFilter;
+    },
+    colours(state){
+        return state.colours;
+       }
 }

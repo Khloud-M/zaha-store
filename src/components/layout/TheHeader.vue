@@ -43,7 +43,7 @@
               :style="{ width: Width + 'px' }"
             />
           </form>
-          <router-link to="/">
+          <router-link to="/:auth">
             <bace-button> Register Now</bace-button>
           </router-link>
           <!-- <router-link v-else>
@@ -94,7 +94,7 @@
                         :style="{ width: Width + 'px' }"
                       />
                     </form>
-                    <router-link to="/">
+                    <router-link to="/register/:auth">
                       <bace-button @click="toggle"> Register Now</bace-button>
                     </router-link>
                     <!-- <router-link v-else>

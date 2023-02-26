@@ -12,6 +12,11 @@ import ProductItem from '@/components/Products/PorductItem.vue';
 import bootstrap from 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-vue/dist/bootstrap-vue.css';
+// animation library
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+// ..
+AOS.init();
 // Vuetify
 import 'vuetify/styles'
 import { createVuetify } from 'vuetify'

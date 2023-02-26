@@ -7,6 +7,8 @@ import contact from "@/views/mainPage/TheContact.vue";
 import about from "@/views/mainPage/TheAbout.vue";
 import HotOffer from "@/views/mainPage/HotOffer.vue";
 
+
+
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes: [
@@ -22,6 +24,16 @@ const router = createRouter({
     { path: "/about", component: about },
     { path: "/contact", component: contact },
     { path: "/hotoffer", component: HotOffer },
+    // auth page 
+    { path: "/:auth", 
+    component: () => import("@/views/auth/authContainer.vue"),
+    props:true ,
+    children:[
+      { path: "", component: () => import("@/views/auth/RegisterPage.vue") },
+      { path: "signIn", component: () => import("@/views/auth/SignIn.vue") },
+    ]
+  },
+
   ],
   linkActiveClass: "active",
 });

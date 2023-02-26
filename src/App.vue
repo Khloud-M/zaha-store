@@ -1,6 +1,6 @@
 <template>
     <div>
-      <TheHeader/>
+      <the-header v-if="!$route.params.auth"></the-header>
       <transition name="route" mode="out-in">
       <router-view/>
       </transition>
