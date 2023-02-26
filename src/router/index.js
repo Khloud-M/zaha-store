@@ -31,6 +31,7 @@ const router = createRouter({
     children:[
       { path: "", component: () => import("@/views/auth/RegisterPage.vue") },
       { path: "signIn", component: () => import("@/views/auth/SignIn.vue") },
+      { path: "forgetPass", component: () => import("@/views/auth/ForgetPassword.vue") },
     ]
   },
 
