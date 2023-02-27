@@ -4,7 +4,7 @@
       <transition name="route" mode="out-in">
       <router-view/>
       </transition>
-      <TheFooter />
+      <TheFooter  v-if="!$route.params.auth"/>
 
     </div>
 </template>
