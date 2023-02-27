@@ -15,6 +15,8 @@
         <label for="phone"> Phone Number </label>
       </div>
       <!-- phone number-->
+      <!-- this is test -->
+      <router-link to="/:auth/varifecation">test ruter</router-link>
       <bace-button class="sign" type="submit"> Send </bace-button>
       <div class="footer-form d-flex justify-content-center mt-3">
         <router-link to="/:auth">

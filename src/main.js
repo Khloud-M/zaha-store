@@ -22,14 +22,15 @@ import 'vuetify/styles'
 import { createVuetify } from 'vuetify'
 import * as components from 'vuetify/components'
 import * as directives from 'vuetify/directives'
-// import css file 
-import "@/assets/style/main.css"
-import "@/assets/style/form.css"
 
 const vuetify = createVuetify({
   components,
   directives,
 })
+// import css file 
+import "@/assets/style/main.css"
+import "@/assets/style/form.css"
+
 
 createApp(App)
 .use(router)

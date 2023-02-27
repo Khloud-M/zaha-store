@@ -32,6 +32,7 @@ const router = createRouter({
       { path: "", component: () => import("@/views/auth/RegisterPage.vue") },
       { path: "signIn", component: () => import("@/views/auth/SignIn.vue") },
       { path: "resetPass", component: () => import("@/views/auth/ResetPassword.vue") },
+      { path: "varifecation", component: () => import("@/views/auth/VarifectionCode.vue") },
     ]
   },
 
