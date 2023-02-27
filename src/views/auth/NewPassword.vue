@@ -42,11 +42,14 @@
         </div>
         <div class="col-md-6 col-sm-12 image"></div> 
 </template>
+
 <script>
 export default {
     data() {
     return {
       userPhone: null,
+      ConfPassword:null,
+      password:null
     };
 }
 }
