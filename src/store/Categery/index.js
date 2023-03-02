@@ -90,10 +90,11 @@ export default {
           itemName: "Sadu linen abaya",
           img: require("@/assets/image/item3.jpg"),
           collectImg: [
-            require("@/assets/image/repeate1.jpg"),
-            require("@/assets/image/repeate2.jpg"),
-            require("@/assets/image/repeate3.jpg"),
-            require("@/assets/image/repeate4.jpg"),
+            require("@/assets/image/item3.jpg"),
+            require("@/assets/image/item3.jpg"),
+            require("@/assets/image/item3.jpg"),
+            require("@/assets/image/item3.jpg"),
+          
           ],
           soonMoney: 219,
           oldPrice: 437,
@@ -214,10 +215,11 @@ export default {
           // img:require('@/assest/item8.jpg') ,
           img: require("@/assets/image/item8.jpg"),
           collectImg: [
-            require("@/assets/image/repeate1.jpg"),
-            require("@/assets/image/repeate2.jpg"),
-            require("@/assets/image/repeate3.jpg"),
-            require("@/assets/image/repeate4.jpg"),
+            require("@/assets/image/item8.jpg"),
+            require("@/assets/image/item8.jpg"),
+            require("@/assets/image/item8.jpg"),
+            require("@/assets/image/item8.jpg"),
+          
           ],
           soonMoney:219,
           oldPrice :437,
@@ -237,6 +239,7 @@ export default {
       SizeFilter: ["S", "X", "Xl", "XXl", 40, 44, 48, 50, 52,55],
       colours:['#0000FF', '#000080' ,'#FF00FF' ,'#800080' ,'#C0C0C0' ,
       '#FFFFFF', '#808000' ,'#C0C0C0' ,'#FFF221', '#800000', '#FF0000	' ,'#000000'],
+      cart:[],
     };
   },
   getters,

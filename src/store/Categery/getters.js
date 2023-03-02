@@ -15,5 +15,9 @@ export default{
     },
     colours(state){
         return state.colours;
+       },
+       cart(state)
+       {
+        return state.cart;
        }
 }

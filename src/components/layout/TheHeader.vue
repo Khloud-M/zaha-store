@@ -23,6 +23,19 @@
           <li>Ar</li>
         </ul>
         <!-- end list-->
+        <div class="cart">
+          <button
+            class="button-cart"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight"
+          >
+            <img src="@/assets/image/shopping.jpg" alt="cart" />
+            <span class="current_item"> {{ cart.length }}</span>
+            </button>
+          <cart-shop/>
+        </div>
         <div class="navbar_btns_wrapper">
           <form class="search-form">
             <button class="search_btn">
@@ -72,35 +85,34 @@
                   </li>
                   <li><router-link to="/about"> about</router-link></li>
                   <li><router-link to="/contact"> contact us</router-link></li>
-                  
                 </ul>
                 <div class="phone">
-                    <form class="search-form">
-                      <button class="search_btn">
-                        <img
-                          src="@/assets/image/download.svg"
-                          alt="searchIcon"
-                          width="20"
-                          height="20"
-                        />
-                      </button>
-                      <input
-                        class="headerSearch"
-                        type="text"
-                        placeholder="search"
-                        v-model="search"
-                        @blur="rebackWidth"
-                        @click="changeWidth"
-                        :style="{ width: Width + 'px' }"
+                  <form class="search-form">
+                    <button class="search_btn">
+                      <img
+                        src="@/assets/image/download.svg"
+                        alt="searchIcon"
+                        width="20"
+                        height="20"
                       />
-                    </form>
-                    <router-link to="/register/:auth">
-                      <bace-button @click="toggle"> Register Now</bace-button>
-                    </router-link>
-                    <!-- <router-link v-else>
+                    </button>
+                    <input
+                      class="headerSearch"
+                      type="text"
+                      placeholder="search"
+                      v-model="search"
+                      @blur="rebackWidth"
+                      @click="changeWidth"
+                      :style="{ width: Width + 'px' }"
+                    />
+                  </form>
+                  <router-link to="/register/:auth">
+                    <bace-button @click="toggle"> Register Now</bace-button>
+                  </router-link>
+                  <!-- <router-link v-else>
             <bace-button @click="removeToken"> log out </bace-button> 
            </router-link> -->
-                  </div>
+                </div>
               </div>
               <!-- content_dropdown-->
             </div>
@@ -113,6 +125,7 @@
   </header>
 </template>
 <script>
+import { mapGetters } from "vuex";
 export default {
   components: {},
   data() {
@@ -121,6 +134,11 @@ export default {
       search: "",
       mobileNav: false,
     };
+  },
+  computed: {
+    ...mapGetters({
+      cart: "Categery/cart",
+    }),
   },
   methods: {
     changeWidth() {
@@ -202,7 +220,8 @@ export default {
       }
     }
   }
-  .navbar_btns_wrapper , .phone {
+  .navbar_btns_wrapper,
+  .phone {
     display: flex;
     align-items: center;
     justify-content: center;

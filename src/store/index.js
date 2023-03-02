@@ -6,15 +6,4 @@ const store = createStore({
  }
 });
 export default store;
-// export default createStore({
-//   state: {
-//   },
-//   getters: {
-//   },
-//   mutations: {
-//   },
-//   actions: {
-//   },
-//   modules: {
-//   }
-// })
+

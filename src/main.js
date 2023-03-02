@@ -7,6 +7,7 @@ import Vuex from 'vuex'
 import BaseButton from './components/ui/BaseButton.vue'
 import LandingPage from './components/layout/LandingPage.vue'
 import ProductItem from '@/components/Products/PorductItem.vue';
+import CartShop from './components/layout/CartShop.vue';
 
 // import bootstap 
 import bootstrap from 'bootstrap';
@@ -22,6 +23,8 @@ import 'vuetify/styles'
 import { createVuetify } from 'vuetify'
 import * as components from 'vuetify/components'
 import * as directives from 'vuetify/directives'
+import "vuetify/dist/vuetify.min.css";
+
 
 const vuetify = createVuetify({
   components,
@@ -48,4 +51,5 @@ createApp(App)
 .component("bace-button", BaseButton)
 .component("landing-page", LandingPage)
 .component("product-item", ProductItem)
+.component("cart-shop", CartShop)
 .mount('#app')
