@@ -197,7 +197,7 @@
         </div>
       </div>
       <!-- prand -->
-     
+
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingSix">
           <button
@@ -208,8 +208,7 @@
             aria-expanded="false"
             aria-controls="collapseSix"
           >
-          RATE
-
+            RATE
           </button>
         </h2>
         <div
@@ -219,11 +218,25 @@
           data-bs-parent="#accordionExample"
         >
           <div class="accordion-body">
-           
+            <svg
+              v-for="rate in 5"
+              :key="rate"
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="orange"
+              class="bi bi-star"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"
+              />
+            </svg>
           </div>
         </div>
+        
       </div>
-            <!-- rate -->
+      <!-- rate -->
 
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingSeven">
@@ -235,8 +248,7 @@
             aria-expanded="false"
             aria-controls="collapseSeven"
           >
-          OTHER OPTION
-
+            OTHER OPTION
           </button>
         </h2>
         <div
@@ -246,7 +258,7 @@
           data-bs-parent="#accordionExample"
         >
           <div class="accordion-body">
-              <ul class="prodcut_list px-0">
+            <ul class="prodcut_list px-0">
               <li>
                 <div class="filter_prodcut">
                   <input
@@ -319,7 +331,7 @@ export default {
 </script>
   <style  scoped>
 .accordion-button {
-  font-weight: 300;
+  font-weight: 500;
   font-size: 16px;
   color: var(--main_theme_clr);
 }
@@ -328,6 +340,10 @@ export default {
   background-color: white;
   box-shadow: none;
 }
+.accordion-button:not(.collapsed) {
+  color: var(--main_theme_clr) !important;
+}
+
 .accordion-button:focus {
   z-index: 3;
   border-color: black;
@@ -335,7 +351,7 @@ export default {
   box-shadow: none;
 }
 .accordion-button[data-v-04d7710d]:not(.collapsed) {
-  color: var(--main_theme_clr);
+  color: var(--main_theme_clr) !important;
 }
 .filter_prodcut {
   display: flex;
@@ -349,11 +365,11 @@ export default {
   box-shadow: 0 0 0 0.2rem hsl(306, 100%, 16%, 0.3);
 }
 label {
-  font-size: 16px;
+  font-size: 17px;
   color: #001514;
   text-transform: capitalize;
   letter-spacing: 1px;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .colors,
@@ -367,7 +383,7 @@ label {
   width: 50px;
   height: 50px;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 500;
 
   /* border-radius: 50%; */
   border: 1px solid var(--border_clr);
@@ -403,5 +419,8 @@ label {
 .apply,
 .reset {
   width: 100%;
+}
+svg {
+  margin-right: 10px;
 }
 </style>

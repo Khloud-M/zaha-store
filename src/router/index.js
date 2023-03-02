@@ -6,6 +6,8 @@ import products from "@/views/mainPage/TheProducts.vue";
 import contact from "@/views/mainPage/TheContact.vue";
 import about from "@/views/mainPage/TheAbout.vue";
 import HotOffer from "@/views/mainPage/HotOffer.vue";
+// product 
+import ProductDetails from "@/components/Products/ProductDetails.vue"
 
 
 
@@ -21,6 +23,7 @@ const router = createRouter({
       component: categore,
     },
     { path: "/products", component: products },
+    { path: "/products/:id", component: ProductDetails  , props:true},
     { path: "/about", component: about },
     { path: "/contact", component: contact },
     { path: "/hotoffer", component: HotOffer },

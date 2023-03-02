@@ -8,7 +8,7 @@
           :key="item.id"
         >
           <div class="cards">
-            <router-link :to="`/product/${item.id}`">
+            <router-link :to="`/products/${item.id}`">
               <div class="image">
                 <img :src="item.img" alt="" />
                 <span class="sale">{{ item.sale }} </span>

@@ -27,10 +27,15 @@ const vuetify = createVuetify({
   components,
   directives,
 })
+// import toast tontifaction
+import ToastPlugin from 'vue-toast-notification';
 // import css file 
 import "@/assets/style/main.css"
 import "@/assets/style/form.css"
-
+// import axios
+import axios from 'axios'
+import VueAxios from 'vue-axios'
+// axios.defaults.baseURL='https://backend.zahaaksa.com/api';
 
 createApp(App)
 .use(router)
@@ -38,6 +43,8 @@ createApp(App)
 .use(Vuex)
 .use(bootstrap)
 .use(vuetify)
+.use(ToastPlugin)
+.use(VueAxios, axios)
 .component("bace-button", BaseButton)
 .component("landing-page", LandingPage)
 .component("product-item", ProductItem)

@@ -98,5 +98,47 @@
         ConfPassword: "",
       };
     },
+    methods: {
+    // start  method for validate forrm
+    submitForm() {
+      this.isValid = true;
+      this.password = this.ConfPassword;
+      if (this.useremail === "" || !this.useremail.includes("@")) {
+        this.isValid = false;
+        return;
+      }
+      if (this.password !== this.ConfPassword || this.password.length < 6) {
+        this.isValid = false;
+        return;
+      }
+
+      const myData = new FormData();
+      myData.append("full_name", this.FullName);
+      myData.append("user_name", this.userName);
+      myData.append("phone", this.userPhone);
+      myData.append("email", this.useremail);
+      myData.append("password", this.password);
+      myData.append("password_confirmation", this.ConfPassword);
+      myData.append("device_type", "ios");
+      myData.append("device_token", "asdfghjklkjhgfdsdfghjkl");
+      this.axios({
+        method: "POST",
+        url: "/auth/register",
+        data: myData,
+      })
+      .then((response)=>{
+        if(response.data.status == true ) {
+          this.$toast.success(`rigister is vaild`);
+          this.$router.push("/:auth/varifecation");       
+        }
+      
+    })
+      .catch((error) => {
+        // console.log(error.response.data.msg);
+        console.log(error);
+        this.$toast.error(`pleaz enter vaild data`);
+      });
+    }
+  }
 }
 </script>
