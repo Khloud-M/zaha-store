@@ -38,10 +38,10 @@ export default {
           itemName: "Jellabuya",
           img: require("@/assets/image/item1.jpg"),
           collectImg: [
-            "@/assets/image/repeate1.jpg",
-            "@/assets/image/repeate2.jpg",
-            "@/assets/image/repeate3.jpg",
-            "@/assets/image/repeate4.jpg",
+            require("@/assets/image/repeate1.jpg"),
+            require("@/assets/image/repeate2.jpg"),
+            require("@/assets/image/repeate3.jpg"),
+            require("@/assets/image/repeate4.jpg"),
           ],
           soonMoney: 219,
           oldPrice: 437,
@@ -52,6 +52,7 @@ export default {
           description:
             "A black abaya with a modern and distinctive design with sadu details and soft beads from the sleeves and a longitudinal suggestion that gives you a feeling of comfort and freedom of movement. It is woven from linen fabric.",
           quantity: 5,
+          qty:1,
           code: "#J0745",
           imageSmall: [
             "@/assest/item1.jpg",
@@ -65,12 +66,12 @@ export default {
           id: "p2",
           itemName: "Sadu linen abaya",
           img: require("@/assets/image/item2.jpg"),
-        collectImg: [
-          "@/assets/image/repeate1.jpg",
-          "@/assets/image/repeate2.jpg",
-          "@/assets/image/repeate3.jpg",
-          "@/assets/image/repeate4.jpg",
-        ],
+          collectImg: [
+            require("@/assets/image/repeate1.jpg"),
+            require("@/assets/image/repeate2.jpg"),
+            require("@/assets/image/repeate3.jpg"),
+            require("@/assets/image/repeate4.jpg"),
+          ],
           soonMoney: 219,
           oldPrice: 437,
           sale: "40% off",
@@ -80,6 +81,7 @@ export default {
           description:
             "A black abaya with a modern and distinctive design with sadu details and soft beads from the sleeves and a longitudinal suggestion that gives you a feeling of comfort and freedom of movement. It is woven from linen fabric.",
           quantity: 10,
+          qty:1,
           code: "#J0745",
           color:['#000' , '#0000FF' , '#FF0000']
         },
@@ -102,6 +104,7 @@ export default {
           description:
             "A black abaya with a modern and distinctive design with sadu details and soft beads from the sleeves and a longitudinal suggestion that gives you a feeling of comfort and freedom of movement. It is woven from linen fabric.",
           quantity: 5,
+          qty:1,
           code: "#J0745",
           color:['#000' , '#0000FF' , '#FF0000']
 
@@ -110,12 +113,12 @@ export default {
           id: "p4",
           itemName: "Sadu linen abaya",
           img: require("@/assets/image/item4.jpg"),
-        collectImg: [
-          "@/assets/image/repeate1.jpg",
-          "@/assets/image/repeate2.jpg",
-          "@/assets/image/repeate3.jpg",
-          "@/assets/image/repeate4.jpg",
-        ],
+          collectImg: [
+            require("@/assets/image/repeate1.jpg"),
+            require("@/assets/image/repeate2.jpg"),
+            require("@/assets/image/repeate3.jpg"),
+            require("@/assets/image/repeate4.jpg"),
+          ],
           soonMoney: 219,
           oldPrice: 437,
           not: "notAvalible",
@@ -125,6 +128,8 @@ export default {
           description:
             "A black abaya with a modern and distinctive design with sadu details and soft beads from the sleeves and a longitudinal suggestion that gives you a feeling of comfort and freedom of movement. It is woven from linen fabric.",
           quantity: 7,
+          qty:1,
+
           code: "#J0745",
           color:['#000' , '#0000FF' , '#FF0000']
 
@@ -133,12 +138,12 @@ export default {
           id: "p5",
           itemName: "Jellabuya",
           img: require("@/assets/image/item5.jpg"),
-        collectImg: [
-          "@/assets/image/repeate1.jpg",
-          "@/assets/image/repeate2.jpg",
-          "@/assets/image/repeate3.jpg",
-          "@/assets/image/repeate4.jpg",
-        ],
+          collectImg: [
+            require("@/assets/image/repeate1.jpg"),
+            require("@/assets/image/repeate2.jpg"),
+            require("@/assets/image/repeate3.jpg"),
+            require("@/assets/image/repeate4.jpg"),
+          ],
           soonMoney:219,
           oldPrice :437,
           sale: "30% off",
@@ -148,6 +153,8 @@ export default {
           description:
             "A black abaya with a modern and distinctive design with sadu details and soft beads from the sleeves and a longitudinal suggestion that gives you a feeling of comfort and freedom of movement. It is woven from linen fabric.",
           quantity: 3,
+          qty:1,
+
           code: "#J0745",
           color:['#000' , '#0000FF' , '#FF0000']
 
@@ -156,12 +163,12 @@ export default {
           id: "p6",
           itemName: "Sadu linen abaya",
           img: require("@/assets/image/item6.jpg"),
-        collectImg: [
-          "@/assets/image/repeate1.jpg",
-          "@/assets/image/repeate2.jpg",
-          "@/assets/image/repeate3.jpg",
-          "@/assets/image/repeate4.jpg",
-        ],
+          collectImg: [
+            require("@/assets/image/repeate1.jpg"),
+            require("@/assets/image/repeate2.jpg"),
+            require("@/assets/image/repeate3.jpg"),
+            require("@/assets/image/repeate4.jpg"),
+          ],
           soonMoney:219,
           oldPrice :437,
           not: "notAvalible",
@@ -171,6 +178,8 @@ export default {
           description:
             "A black abaya with a modern and distinctive design with sadu details and soft beads from the sleeves and a longitudinal suggestion that gives you a feeling of comfort and freedom of movement. It is woven from linen fabric.",
           quantity: 9,
+          qty:1,
+
           code: "#J0745",
           color:['#000' , '#0000FF' , '#FF0000']
 
@@ -179,12 +188,12 @@ export default {
           id: "p7",
           itemName: "Sadu linen abaya",
           img: require("@/assets/image/item7.jpg"),
-        collectImg: [
-          "@/assets/image/repeate1.jpg",
-          "@/assets/image/repeate2.jpg",
-          "@/assets/image/repeate3.jpg",
-          "@/assets/image/repeate4.jpg",
-        ],
+          collectImg: [
+            require("@/assets/image/repeate1.jpg"),
+            require("@/assets/image/repeate2.jpg"),
+            require("@/assets/image/repeate3.jpg"),
+            require("@/assets/image/repeate4.jpg"),
+          ],
           soonMoney:219,
           oldPrice :437,
           sale: "50% off",
@@ -194,6 +203,7 @@ export default {
           description:
             "A black abaya with a modern and distinctive design with sadu details and soft beads from the sleeves and a longitudinal suggestion that gives you a feeling of comfort and freedom of movement. It is woven from linen fabric.",
           quantity: 5,
+          qty:1,
           code: "#J0745",
           color:['#000' , '#0000FF' , '#FF0000']
 
@@ -203,12 +213,12 @@ export default {
           itemName: "Sadu linen abaya",
           // img:require('@/assest/item8.jpg') ,
           img: require("@/assets/image/item8.jpg"),
-        collectImg: [
-          "@/assets/image/repeate1.jpg",
-          "@/assets/image/repeate2.jpg",
-          "@/assets/image/repeate3.jpg",
-          "@/assets/image/repeate4.jpg",
-        ],
+          collectImg: [
+            require("@/assets/image/repeate1.jpg"),
+            require("@/assets/image/repeate2.jpg"),
+            require("@/assets/image/repeate3.jpg"),
+            require("@/assets/image/repeate4.jpg"),
+          ],
           soonMoney:219,
           oldPrice :437,
           sale: "Not Avalible",
@@ -218,6 +228,8 @@ export default {
           description:
             "A black abaya with a modern and distinctive design with sadu details and soft beads from the sleeves and a longitudinal suggestion that gives you a feeling of comfort and freedom of movement. It is woven from linen fabric.",
           quantity: 5,
+          qty:1,
+
           code: "#J0745",
           color:['#000' , '#0000FF' , '#FF0000']
         },
