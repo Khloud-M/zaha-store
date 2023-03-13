@@ -7,7 +7,7 @@ import Vuex from 'vuex'
 import BaseButton from './components/ui/BaseButton.vue'
 import LandingPage from './components/layout/LandingPage.vue'
 import ProductItem from '@/components/Products/PorductItem.vue';
-import CartShop from './components/layout/CartShop.vue';
+import CartShop from './components/Cart/CartShop.vue';
 
 // import bootstap 
 import bootstrap from 'bootstrap';
