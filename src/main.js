@@ -39,6 +39,8 @@ import "@/assets/style/form.css"
 import axios from 'axios'
 import VueAxios from 'vue-axios'
 // axios.defaults.baseURL='https://backend.zahaaksa.com/api';
+import VOtpInput from "vue3-otp-input";
+
 
 createApp(App)
 .use(router)
@@ -52,4 +54,5 @@ createApp(App)
 .component("landing-page", LandingPage)
 .component("product-item", ProductItem)
 .component("cart-shop", CartShop)
+.component('v-otp-input', VOtpInput)
 .mount('#app')

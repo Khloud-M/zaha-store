@@ -35,6 +35,26 @@ export default {
       userPhone: null,
 
     };
-}
+} ,
+methods: {
+    submitForm() {
+      const myData = new FormData();
+      myData.append("phone", this.userPhone);
+      this.axios({
+        method: "POST",
+        url: "/auth/password/forget",
+        data: myData,
+      })
+        .then((response) => {
+          // ملهاش اي لازمة
+          if (response.data.status == true) {
+            this.$router.push("/:auth/signIn");
+          }
+        })
+        .catch((error) => {
+          console.log(error.response.data.msg);
+        });
+    },
+  },
 }
 </script>

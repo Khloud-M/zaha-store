@@ -15,7 +15,6 @@
         @on-complete="handleOnComplete"
         v-model="verification_code"
       />
-      <!-- <input type="text" placeholder="cpde"  v-model="verification_code"> -->
     </div>
           <!-- end varifaction rigester -->
         </div>
@@ -54,19 +53,36 @@ input::placeholder {
 </style>
 
 <script>
-import VOtpInput from "vue3-otp-input";
 export default {
-  name: "App",
-  components: {
-    VOtpInput,
-  },
   data() {
     return {
-      otpInput: null,
+      phone: null,
       verification_code: null,
-      phone: localStorage.getItem("phone"),
-      verificationType: this.$route.params.type,
+      doubleRoute:true
     };
   },
-}
+  methods: {
+    submitForm() {
+      const myData = new FormData();
+      myData.append("phone", this.phone);
+      myData.append("verification_code", this.verification_code);
+      myData.append("device_type", "ios");
+      myData.append("device_token", "asdasdasdasdasda");
+      this.axios({
+        method: "POST",
+        url: "/auth/email/verify",
+        data: myData,
+      })
+        .then((response) => {
+          if (response.data.status == true) {
+            if(this.doubleRoute)
+            this.$router.push("/:auth/signIn");
+          }
+        })
+        .catch((error) => {
+          console.log(error.response.data.msg);
+        });
+    },
+  },
+};
   </script>
