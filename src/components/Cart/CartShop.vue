@@ -35,3 +35,11 @@ export default {
   },
 };
 </script>
+<style>
+.btn-close:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.20rem var(--main_theme_clr);
+    opacity: 1;
+}
+
+</style>
