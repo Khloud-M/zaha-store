@@ -33,8 +33,8 @@
           >
             <img src="@/assets/image/shopping.jpg" alt="cart" />
             <span class="current_item"> {{ cart.length }}</span>
-            </button>
-          <cart-shop/>
+          </button>
+          <cart-shop />
         </div>
         <div class="navbar_btns_wrapper">
           <form class="search-form">
@@ -109,11 +109,9 @@
                   <router-link to="/register/:auth">
                     <bace-button @click="toggle"> Register Now</bace-button>
                   </router-link>
-                  <!-- <router-link v-else>
-            <bace-button @click="removeToken"> log out </bace-button> 
-           </router-link> -->
                 </div>
               </div>
+
               <!-- content_dropdown-->
             </div>
             <!-- container_dropdowm-->

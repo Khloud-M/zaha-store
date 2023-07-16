@@ -51,6 +51,12 @@ export default {
       ConfPassword:null,
       password:null
     };
+},
+methods:{
+  submitForm(){
+    this.$router.push("/:auth/signIn");
+
+  }
 }
 }
 </script>

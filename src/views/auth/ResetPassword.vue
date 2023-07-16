@@ -16,7 +16,6 @@
       </div>
       <!-- phone number-->
       <!-- this is test -->
-      <router-link to="/:auth/varifecation">test ruter</router-link>
       <bace-button class="sign" type="submit"> Send </bace-button>
       <div class="footer-form d-flex justify-content-center mt-3">
         <router-link to="/:auth">
@@ -30,14 +29,16 @@
 </template>
 <script>
 export default {
-    data() {
+  data() {
     return {
       userPhone: null,
-
     };
-} ,
-methods: {
+  },
+  methods: {
     submitForm() {
+      // if api is not there
+      this.$router.push("/:auth/varifecation");
+      // if api is there
       const myData = new FormData();
       myData.append("phone", this.userPhone);
       this.axios({
@@ -48,7 +49,7 @@ methods: {
         .then((response) => {
           // ملهاش اي لازمة
           if (response.data.status == true) {
-            this.$router.push("/:auth/signIn");
+            this.$router.push("/:auth/varifecation");
           }
         })
         .catch((error) => {
@@ -56,5 +57,5 @@ methods: {
         });
     },
   },
-}
+};
 </script>
