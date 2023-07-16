@@ -15,15 +15,23 @@
       ></button>
     </div>
     <div class="offcanvas-body">
-      <empty-cart />
+      <FillCart v-if="cart.length" /> 
+      <empty-cart v-else />
     </div>
   </div>
 </template>
 <script>
 import EmptyCart from "@/components/Cart/EmptyCart.vue";
+import FillCart from "@/components/Cart/FillCart.vue";
 export default {
   components: {
     EmptyCart,
+    FillCart
+  },
+  computed: {
+    cart() {
+      return this.$store.getters["Categery/cart"];
+    },
   },
 };
 </script>

@@ -129,15 +129,19 @@ export default {
     },
 
     addToCart() {
-      if (this.$store.state.authModle.userToken) {
-        this.$store.dispatch("chooseCategory/addToCart", {
+      this.$store.dispatch("Categery/addToCart", {
           product: this.selectedItem,
           qty: this.qty,
         });
-      } else {
-        this.$router.push("/:auth");
-        console.log("coooode");
-      }
+        // console.log(this.selectedItem);
+      // if (this.$store.state.authModle.userToken) {
+      //   this.$store.dispatch("chooseCategory/addToCart", {
+      //     product: this.selectedItem,
+      //     qty: this.qty,
+      //   });
+      // } else {
+      //   this.$router.push("/:auth");
+      // }
     },
   },
   mounted() {
