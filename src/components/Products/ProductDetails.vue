@@ -135,7 +135,8 @@ export default {
           qty: this.qty,
         });
       } else {
-        this.$router.push("/:auth/register");
+        this.$router.push("/:auth");
+        console.log("coooode");
       }
     },
   },
