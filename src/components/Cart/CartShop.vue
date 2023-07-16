@@ -38,7 +38,7 @@ export default {
 <style>
 .btn-close:focus {
     outline: 0;
-    box-shadow: 0 0 0 0.20rem var(--main_theme_clr);
+    box-shadow: 0 0 0 0.20rem var(--main_theme_clr) !important;
     opacity: 1;
 }
 
