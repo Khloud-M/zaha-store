@@ -1,23 +1,30 @@
 <template>
-    <div>
-      <the-header v-if="!$route.params.auth"></the-header>
-      <transition name="route" mode="out-in">
-      <router-view/>
-      </transition>
-      <TheFooter  v-if="!$route.params.auth && !$route.path==='checkout'"/>
-
-    </div>
+  <div>
+    <the-header v-if="!$route.params.auth"></the-header>
+    <transition name="route" mode="out-in">
+      <router-view
+        data-aos="fade-in"
+        data-aos-offset="200"
+        data-aos-delay="100"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="true"
+        data-aos-anchor-placement="top-center"
+      />
+    </transition>
+    <TheFooter v-if="!$route.params.auth && !$route.path === 'checkout'" />
+  </div>
 </template>
 <script>
-import TheHeader from './components/layout/TheHeader.vue';
-import TheFooter from './components/layout/TheFooter.vue';
-export default{
-  components:{
+import TheHeader from "./components/layout/TheHeader.vue";
+import TheFooter from "./components/layout/TheFooter.vue";
+export default {
+  components: {
     TheHeader,
-    TheFooter
-  }
-
-}
+    TheFooter,
+  },
+};
 </script>
 <style lang="scss">
 .route-enter-from {
