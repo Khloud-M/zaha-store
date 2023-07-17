@@ -44,7 +44,7 @@
       <h6>total price :</h6>
       <h6>{{ totalPrice }} R.S</h6>
     </div>
-    <router-link to="/TheCheck" v-if="cart.length">
+    <router-link to="/:TheCheck" v-if="cart.length">
       <bace-button class="Check" data-bs-dismiss="offcanvas">
         Check Out</bace-button
       >
