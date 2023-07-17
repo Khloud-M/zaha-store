@@ -1,5 +1,5 @@
 <template>
-    <footer class="mt-3">
+    <footer class="mt-5">
       <div class="footer-content">
         <div class="container">
           <div class="row d-flex">
