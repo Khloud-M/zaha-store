@@ -13,7 +13,7 @@
         data-aos-anchor-placement="top-center"
       />
     </transition>
-    <TheFooter v-if="!$route.params.auth && !$route.params.TheCheck" />
+    <TheFooter v-if="!$route.params.auth" />
   </div>
 </template>
 <script>
