@@ -30,6 +30,9 @@
     font-weight: 400;
     font-size: 50px;
     text-transform: capitalize;
+    @media (max-width: 768px) {
+      font-size: 40px;
+    }
   }
   .link {
     font-size: 17px;

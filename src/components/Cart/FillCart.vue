@@ -41,11 +41,13 @@
       </div>
     </div>
     <div class="total_price">
-      <h6>total price : </h6>
-      <h6> {{ totalPrice }} R.S</h6>
+      <h6>total price :</h6>
+      <h6>{{ totalPrice }} R.S</h6>
     </div>
-    <router-link to="/checkOut">
-      <bace-button class="Check"> Check Out</bace-button>
+    <router-link to="/TheCheck" v-if="cart.length">
+      <bace-button class="Check" data-bs-dismiss="offcanvas">
+        Check Out</bace-button
+      >
     </router-link>
   </div>
 </template>

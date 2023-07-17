@@ -6,6 +6,7 @@ import products from "@/views/mainPage/TheProducts.vue";
 import contact from "@/views/mainPage/TheContact.vue";
 import about from "@/views/mainPage/TheAbout.vue";
 import HotOffer from "@/views/mainPage/HotOffer.vue";
+import TheCheck from "@/views/mainPage/TheCheck.vue";
 // product 
 import ProductDetails from "@/components/Products/ProductDetails.vue"
 
@@ -27,6 +28,7 @@ const router = createRouter({
     { path: "/about", component: about },
     { path: "/contact", component: contact },
     { path: "/hotoffer", component: HotOffer },
+    { path: "/TheCheck", component: TheCheck },
     // auth page 
     { path: "/:auth", 
     component: () => import("@/views/auth/authContainer.vue"),
