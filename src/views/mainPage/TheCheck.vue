@@ -5,7 +5,7 @@
       <div>
         <span>SubTotal</span>
         <hr />
-        <span> 00 R.S</span>
+        <span> 200 R.S</span>
       </div>
       <div>
         <span>Shipping Price </span>
@@ -15,7 +15,7 @@
       <div>
         <span>Total </span>
         <hr />
-        <span> 00 R.S</span>
+        <span> 220 R.S</span>
       </div>
     </div>
     <h4>CHECKOUT</h4>
