@@ -10,7 +10,7 @@
       <div>
         <span>Shipping Price </span>
         <hr />
-        <span> 00 R.S</span>
+        <span> 20 R.S</span>
       </div>
       <div>
         <span>Total </span>
@@ -145,8 +145,8 @@ export default {
   },
   methods: {
     submitForm() {
-    //   this.username = this.username;
-    //   this.usernumber = this.usernumber;
+      //   this.username = this.username;
+      //   this.usernumber = this.usernumber;
       if (this.username && this.usernumber && (this.home || this.mansoura)) {
         this.$refs.step1.classList.add("done");
         this.$refs.step2.classList.add("active");
@@ -162,6 +162,9 @@ export default {
     color: var(--main_theme_clr);
     text-align: center;
     margin: 30px 0;
+    @media (max-width: 768px) {
+      font-size: 18px;
+    }
   }
   .container_totalCost {
     display: flex;
@@ -174,6 +177,9 @@ export default {
       column-gap: 5px;
       font-weight: 900;
       color: var(--main_theme_clr);
+      @media (max-width: 480px) {
+        grid-template-columns: repeat(3, 20% 60% 20%);
+      }
       hr {
         color: rgb(139, 137, 137);
       }
@@ -248,12 +254,19 @@ export default {
     justify-items: start;
     justify-content: space-between;
     column-gap: 20px;
+    overflow: hidden;
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
+    }
   }
   .form_shipping {
     background: rgb(224 182 220 / 30%);
     width: 100%;
     border-radius: 4px;
     padding: 50px 25px;
+    margin: 10px 0;
+    // overflow: hidden;
+
     .form_check input {
       position: absolute;
       width: 30px;
