@@ -158,7 +158,7 @@ export default {
 
 <style lang="scss">
 .checkout {
-  margin: 30px 0;
+  margin: 30px auto;
   h4 {
     color: var(--main_theme_clr);
     text-align: center;
